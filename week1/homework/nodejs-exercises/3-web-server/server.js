@@ -5,7 +5,7 @@ const path = require('path')
 
 
 //create a server
-let server = http.createServer(function (req, res) { 
+http.createServer(function (req, res) { 
     // file path
     let filePath = path.join(__dirname, req.url == '/' ? 'index.html' : req.url)
     // extension of file
