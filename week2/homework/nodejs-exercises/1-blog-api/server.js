@@ -6,9 +6,10 @@ const PORT = process.env.PORT || 3000
 app.use(express.json())
 
 app.get('/',(req,res)=>{
-    res.end('Blog post website')
     res.set('Content-Type', 'text/plain')
     res.status(200)
+    res.end('Blog post website')
+
 })
 
 // add new blog
