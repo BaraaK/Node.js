@@ -1,0 +1,22 @@
+<form action="/weather" method="POST" class="form-weather">
+    <div class="main-container">
+        <div class="input-container">
+    <input class="input-city" type="text" name="cityName"  id="city" placeholder="Enter a City ..." required >
+  </div>
+  <div class="select-container">
+    <select name="unit" >
+        <option selected disabled>Choose a temperature unit</option>
+        <option name = "fahrenheit" value="Fahrenheit">Fahrenheit</option>
+        <option name = "celsius" value="Celsius">Celsius</option>
+        <option name = "kelvin" value="Kelvin">Kelvin</option>
+    </select>
+  </div>
+    </div>
+  
+  <div class="btn-container">
+    <input id= "submit-btn" type="submit" value="Submit">
+  </div>
+  <div class="result">
+      <p>{{text}} {{cityWeather}} {{unitSym}} {{sun}}</p>
+  </div>
+  </form>
